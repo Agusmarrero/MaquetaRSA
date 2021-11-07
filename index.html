@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="App.js"></script>
+    <link href="App.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Critografía</title>
+</head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body>
+    <div class="container" style="text-align: center; border-bottom: 2px solid #89d2eb">
+        <a class="title">CRIPTOGRAFÍA</h1>
+
+    </div>
+    <div class="row" style="margin-left:50px" id="principal">
+        <div class="col-3" style="margin-left: 10%; margin-top:50px">
+            <a class="text">CLIENTE</a>
+
+            <img alt="" src="gif-computer.gif" height="226.281" width="320">
+            <button class="btn-primary text" style="margin-left: 45px;" onClick="msg()">ENVIAR UN MENSAJE</button>
+        </div>
+        <div class="col-3" style="margin-top:90px;display: grid;">
+            <img alt="" src="Arrow.gif" height="180" width="200">
+            <a class="text">MENSAJE</a>
+        </div>
+        <div class="col-3" style="margin-top:90px;margin-left: 133px;">
+            <a class="text">SERVIDOR</a>
+            <img id="nextStep" alt="" src="gif-computer.gif" height="226.281" width="320" onClick="msgStep()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="hide "
+            style="margin-left:50px; background-color:#4abc96; width: 400px; height: 400px;margin-top:30px"
+            id="segundo">
+            <div class="col-3" style="margin-left: 10%; margin-top:50px">
+                <div class="container-publica" style="width: 300px; height: 30px; margin-bottom: 10px;">
+                    <a class="text" style=" color: white;font-size: 25px;">GENERACIÓN DE CLAVES</a>
+                </div>
+                <div class="container-publica" style="border:2px solid whitesmoke; padding:10px;width: 300px;">
+                    <a class="text" style=" color: white;">CLAVE PÚBLICA</a>
+                    <input type="text" id="mensaje" placeholder="Escriba su mensaje"
+                        style="width: 300px; height: 30px;">
+                </div>
+                <div class="container-privada"
+                    style="border:2px solid whitesmoke; padding:10px;margin-top:10px;width: 300px;">
+                    <a class="text" style=" color: white;">CLAVE PRIVADA</a>
+                    <input type="text" id="mensaje" placeholder="Escriba su mensaje"
+                        style="width: 300px; height: 30px;">
+                </div>
+                <button class="btn-white text"
+                    style="margin-right: 0px;margin-left: 180px;margin-top: 20px;">GENERAR</button>
+            </div>
+        </div>
+        <div class="col-3 hide" style="margin-top:50px;align-self: center;margin-left:50px" id="next">
+            <img alt="" src="Next.png" height="50" width="70" onclick="msgStep()">
+        </div>
+
+        <div class="hide" id="tercero">
+            <div class=" "
+                style="margin-left:50px; background-color:#4abc96; width: 400px; height: 400px;margin-top:30px"
+                id="segundo">
+                <div class="col-3" style="margin-left: 10%; margin-top:50px">
+                    <div class="container-publica" style="width: 300px; height: 30px; margin-bottom: 10px;">
+                        <a class="text" style=" color: white;font-size: 25px;">ESCRIBIR MENSAJE</a>
+                    </div>
+                    <input type="text" id="mensaje" placeholder="Escriba su mensaje"
+                        style="width: 300px; height: 90px;">
+                    <button class="btn-white text"
+                        style="margin-right: 0px;margin-left: 180px;margin-top: 20px;">ENVIAR</button>
+                </div>
+            </div>
+            <div class="col-3 hide" style="margin-top:50px;align-self: center;margin-left:50px" id="nextSeg" onClick="crypto()">
+                <img alt="" src="Next.png" height="50" width="70" onclick="crypto()">
+            </div>
+            <div class="col-3 hide" style="margin-top:50px;align-self: center;" id="cryptoimg">
+                <img alt="" src="Crypto.png" height="100" width="130" onclick="crypto()">
+                <!-- <a class="text" style=" color: black;font-size: 20px;">¡ENCRIPTAR!</a> -->
+            </div>
+            
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
